@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+  <!-- <script type="text/javascript" src="script.js"></script> -->
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript" src="script.js"></script>
+  
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <h4>Chat with me</h4>
+      <button class="btn btn-primary" type="button" id="create_room" onclick="createRoom()">Create Room</button>
+      <button class="btn btn-primary" type="button" id="leave_room" onclick="leaveRoom()">Leave Room</button>
+    </a>
+  </nav>
+
+  <div class="container">
+
+    <div class="input-group mb-3 fixed-top">
+      <input class="form-control" placeholder="your room id" id="room_id_field">
+      <div class="input-group-append">
+        <button class="btn btn-primary" type="button" id="join_room" onclick="joinRoom()">Join Room</button>
+      </div>
+    </div>
+
+
+
+    <ul class="list-group" id="chat_list">
+    </ul>
+
+
+
+    <div class="input-group mb-3 fixed-bottom">
+      <input class="form-control" placeholder="your message" id="my_message">
+      <div class="input-group-append">
+        <button class="btn btn-primary" type="button" id="send" onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "socket",
+  "description": "Blackboard with socket",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Nithin P P",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "socket.io": "^2.3.0"
+  }
+}
